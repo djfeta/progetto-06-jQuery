@@ -1,62 +1,65 @@
-body {
-    padding: 0;
+* {
     margin: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: inline-block;
+body {
+    font: 18px arial;
+    background: rgb(163, 154, 154);
 }
 
-.row {
-    width: 100%;
-    max-width: 1400px;
-    min-width: 1250px;
-    margin: auto;
+#scatola {
+    margin: 0px auto;
+    width: 600px;
 }
 
-.box {
-    width: 50%;
-    margin: auto;
+#scatolaimmagini {
+    z-index: 1;
+    margin: 10px 0 0;
 }
 
-.numclicks,
-h2 {
-    text-align: left;
-}
-
-.images {
-    background: rgba(0,218,219,1);
-    width: 140px;
-    height: 140px;
-    margin: 5px;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-.images img {
-    padding: 5px;
-    display: none;
-}
-
-.restart {
-    text-align: center;
-}
-
-#Restart {
-    font-family: 'Montserrat Alternates', sans-serif;
+#scatolaimmagini div {
     float: left;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px 10px;
-    background: rgb(15, 15, 15);
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border: 4px solid #1c83a0;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+    background: #B1B1B1;
+    z-index: 2;
+    box-shadow: 10px 10px black;
+}
+
+#scatolaimmagini div img {
+    display: none;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#scatolabottoni {
+    text-align: center;
+    margin: 20px;
+    display: block;
+}
+
+#scatolabottoni .button {
+    text-transform: uppercase;
+    background: #c02aee;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#scatolabottoni .button:hover {
+    background: #ce2efe;
+    ;
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }
